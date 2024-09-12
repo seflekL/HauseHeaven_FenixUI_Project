@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    TestNG ile sectigimiz method/class/package'lari calistirmak icin
+    testNG xml dosyalari kullanabiliriz
+
+    1- olusturacagimiz dosya uzantisi mutlaka .xml olmalidir
+    2- olusrturdugumuz .xml dosyasinin TestNG tarafindan calistirilmasi icin
+       ilk satirina <!DOCTYPE.... yazilmalidir
+    3- suite'den baslayarak test hiyerarsisine uygun bicimde
+       calistirmak istedigimiz method/class/package'lari secmek
+
+-->
+
+<suite name="smoke test suiti">
+    <test name="smoke test">
+        <classes>
+
+            <class name="tests.US_039.TC_IK007"></class>
+            <class name="tests.US_039.TC_IK008"></class>
+            <class name="tests.US_039.TC_IK009"></class>
+            <class name="tests.US_039.TC_IK010"></class>
+            <class name="tests.US_039.TC_IK011"></class>
+            <class name="tests.US_039.TC_IK012"></class>
+
+        </classes>
+    </test>
+</suite>
