@@ -19,7 +19,6 @@ public class TC_L021footerfacebook extends TestBaseRapor {
         LeventMethods.footerhomepageScroll();
         //Ziyaretci footer bolumunde yer alan "FaceBook" logosuna  tiklar
 
-        homePage.SeffooterfacebookBoxElementi.click();
 
         ReusableMethods.getFullScreenshot(Driver.getDriver());
         extentTest.pass("Ziyaretci footer bolumunde yer alan \"FaceBook\" logosuna  tiklar");

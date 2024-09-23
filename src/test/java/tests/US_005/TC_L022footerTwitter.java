@@ -24,7 +24,7 @@ public class TC_L022footerTwitter extends TestBaseRapor {
         //Ziyaretci yeni sekmede "Hauseheaven-Twitter" sayfasinin ayri sekmede acildigini kontrol eder
         LeventMethods.windowsHanldes(2);
         extentTest.pass("Ziyaretci yeni sekmede \"Hauseheaven-Twitter\" sayfasinin ayri sekmede acildigini kontrol eder");
-        //Ziyaretci Twitter'in resmi websitesine gittigini onaylar
+        //ziyaretci Twitter'in resmi websitesine gittigini onaylar
         String expectedUrL="https://www.twitter.com/";
         String actualurl=Driver.getDriver().getCurrentUrl();
         Assert.assertEquals(actualurl,expectedUrL);

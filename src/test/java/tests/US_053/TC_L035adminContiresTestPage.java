@@ -33,7 +33,7 @@ public class TC_L035adminContiresTestPage extends TestBaseRapor {
 
         //Ayni sekmede acildigini   kontrol eder
         LeventMethods.windowsHanldes(1);
-        //Admin  sayfasinda SideNavigation da yer alan Location basliginin altinda ki "Countires" tiklar  ulke isimleri listelereyrek kontrol eder
+         //SideNavigation da yer alan Location basliginin altinda ki "Countires" tiklar  ulke isimleri listelereyrek kontrol eder
         List<String> ulkepageList = ReusableMethods.getStringList(adminDashboard.sefadminCountiresUlkeList);
         System.out.println(ulkepageList);
         for (String eachulke : ulkepageList) {
