@@ -1,4 +1,4 @@
-package java.tests.US_028;
+package java.tests.US_042.US_028;
 
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
