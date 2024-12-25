@@ -1,9 +1,7 @@
-
-package java.tests.US_028;
+package java.tests.US_042.US_028;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -11,13 +9,14 @@ import utilities.TestBaseRapor;
 
 import static utilities.Driver.driver;
 
-public class TC_M031 extends TestBaseRapor {
+public class TC_M026 extends TestBaseRapor {
 
     @Test
-    public void Test31 (){
+    public void Test26 (){
 
         extentTest = extentReports.createTest("Admin giriş sayfasından " +
-                "Admin Dashboard sayfasına girildiğinde Copyright ve Page Load bilgilerinin görünür olduğu testi");
+                "Admin Dashboard sayfasına girildiğinde Profil ismine tıklandığında " +
+                "Log 0ut linkinin dropdown olarak görünür ve aktif olduğu testi");
 
         //Ziyaretçi browser’ı açar, HauseHeaven Admin giriş URL’ini girer ve enter’a basar
 
@@ -39,25 +38,22 @@ public class TC_M031 extends TestBaseRapor {
         adminDashboard.signInButonu.click();
         extentTest.info("Admin Login sayfasında geçerli giriş bilgileri girildi ve Log in linkine tıklandı.");
 
-        //Açılan sayfanın Admin Dashboard sayfasında olduğunu test eder.
-        Assert.assertTrue(adminDashboard.sefadminHeaderUserNameButtonu.isDisplayed());
-        extentTest.pass("Açılan sayfanın Admin Dashboard sayfası olduğu test edildi.");
-
-        //Admin Dashboard'da Copyright bilgisinin görünür olduğunu doğrular
-        Assert.assertTrue(adminDashboard.adminDashboardCopyrightLinki.isDisplayed());
-        extentTest.pass("Admin Dashboard'da Copyright bilgisinin görünür olduğu test edildi.");
-
-        //Admin Dashboard'da Page Load bilgisinin görünür olduğunu doğrular
-        Assert.assertTrue(adminDashboard.adminDashboardPageLoadLinki.isDisplayed());
-        extentTest.pass("Admin Dashboard'da Page Load bilgisinin görünür olduğu test edildi.");
-
         //Admin Dashboard sayfasında Kullanıcı adına tıklar.
         adminDashboard.sefadminHeaderUserNameButtonu.click();
         extentTest.info("Admin Dashboard sayfasında Kullanıcı adına tıklandı.");
 
+        //Kullanıcı adının altında Log out linkinin dropdown olarak görünür olduğunu doğrular
+        Assert.assertTrue(adminDashboard.sefadminHeaderLogoutButtonu.isDisplayed());
+        extentTest.pass("Kullanıcı adının altında Log out linkinin dropdown olarak görünür olduğu test edildi.");
+
         //Admin Dashboard sayfasında Log out linkine tıklar.
         adminDashboard.sefadminHeaderLogoutButtonu.click();
         extentTest.info("Admin Dashboard sayfasında Log out linkine tıklandı.");
+
+        //Admin Dashboard sayfasından çıkış yapıldığını test eder.
+        Assert.assertTrue(adminDashboard.signInButonu.isDisplayed());
+        extentTest.pass("Admin Dashboard sayfasından çıkış yapıldığı test edildi.");
+
 
         //Sayfayı kapatır
         Driver.quitDriver();

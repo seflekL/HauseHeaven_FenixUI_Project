@@ -20,11 +20,11 @@ public class TC_L038CountiresPageEditTest extends TestBaseRapor {
 
     @Test
     public void Test038adminLocationEditTestPage() {
-        extentTest = extentReports.createTest("Admin Lcaiton Edit Test Page");
+        extentTest = extentReports.createTest("Admin Country Duzenleme Testi");
 
         Faker faker = new Faker();
         AdminDashboard adminDashboard = new AdminDashboard();
-        //Admin hauseheaven Admin sayfasina onceden verilmis Username ve Password Ile basarili sekilde giris saglar
+        //Admin sayfasina onceden verilmis Username ve Password Ile basarili sekilde giris saglar
         LeventMethods.admingirisDashboard();
         extentTest.pass("Admin hauseheaven Admin sayfasina onceden verilmis Username ve Password Ile basarili sekilde giris saglar");
         //Admin sayfasinda SideNavigation da yer alan "Location" basliginat tiklar

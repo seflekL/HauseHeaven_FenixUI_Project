@@ -1,4 +1,4 @@
-package java.tests.US_028;
+package java.tests.US_042.US_028;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -10,13 +10,13 @@ import utilities.TestBaseRapor;
 
 import static utilities.Driver.driver;
 
-public class TC_M029 extends TestBaseRapor {
+public class TC_M028 extends TestBaseRapor {
 
     @Test
-    public void Test29 (){
+    public void Test28 (){
 
         extentTest = extentReports.createTest("Admin giriş sayfasından " +
-                "Admin Dashboard sayfasına girildiğinde Header'daki View Website linki görünür ve aktif olduğu testi");
+                "Admin Dashboard sayfasına girildiğinde Sidebar bölümündeki sekmelerin görünür olduğu testi");
 
         //Ziyaretçi browser’ı açar, HauseHeaven Admin giriş URL’ini girer ve enter’a basar
 
@@ -42,20 +42,24 @@ public class TC_M029 extends TestBaseRapor {
         Assert.assertTrue(adminDashboard.sefadminHeaderUserNameButtonu.isDisplayed());
         extentTest.pass("Açılan sayfanın Admin Dashboard sayfası olduğu test edildi.");
 
-        //Header bölümündeki View Website linkinin görünür olduğunu test eder.
-        Assert.assertTrue(adminDashboard.adminViewWebsiteLinki.isDisplayed());
-        extentTest.pass("Header bölümündeki View Website linkinin görünür olduğu test edildi.");
+        SoftAssert softAssert = new SoftAssert();
 
-        //View Website linkine tıklar
-        adminDashboard.adminViewWebsiteLinki.click();
-        extentTest.info("Header bölümündeki View Website linkine tıklandı.");
+        softAssert.assertTrue(adminDashboard.adminSidebarDashboardLinki.isDisplayed(), "Sidebar'da Dashboard bulunamadı");
+        softAssert.assertTrue(adminDashboard.adminSidebarBlogLinki.isDisplayed(), "Sidebar'da Blog bulunamadı");
+        softAssert.assertTrue(adminDashboard.adminSidebarTestimonialsLinki.isDisplayed(), "Sidebar'da Testimonials bulunamadı");
+        softAssert.assertTrue(adminDashboard.adminSidebarRealEstateLinki.isDisplayed(), "Sidebar'da Real Estate bulunamadı");
+        softAssert.assertTrue(adminDashboard.adminSidebarNewslettersLinki.isDisplayed(), "Sidebar'da Newsletters bulunamadı");
+        softAssert.assertTrue(adminDashboard.adminSidebarConsultsLinki.isDisplayed(), "Sidebar'da Consults bulunamadı");
+        softAssert.assertTrue(adminDashboard.adminSidebarAccountsLinki.isDisplayed(), "Sidebar'da Accounts bulunamadı");
+        softAssert.assertTrue(adminDashboard.adminSidebarPackagesLinki.isDisplayed(), "Sidebar'da Packages bulunamadı");
+        softAssert.assertTrue(adminDashboard.adminSidebarContactLinki.isDisplayed(), "Sidebar'da Contact bulunamadı");
+        softAssert.assertTrue(adminDashboard.adminSidebarPaymentsLinki.isDisplayed(), "Sidebar'da Payments bulunamadı");
+        softAssert.assertTrue(adminDashboard.adminSidebarLocationsLinki.isDisplayed(), "Sidebar'da Locations bulunamadı");
+        softAssert.assertTrue(adminDashboard.adminSidebarMediaLinki.isDisplayed(), "Sidebar'da Media bulunamadı");
 
-        //HauseHeaven Admin giriş sayfasında olduğunu doğrular.
-        expectedUrl="https://qa.hauseheaven.com/";
-        actualUrl= driver.getCurrentUrl();
+        extentTest.pass("Admin Dashboard sayfasına girildiğinde Sidebar bölümündeki sekmelerinin görünür olduğu test edildi ");
 
-        Assert.assertEquals(actualUrl,expectedUrl);
-        extentTest.pass("Açılan Sayfanın Hause Heaven Websitesi olduğu test edildi.");
+        softAssert.assertAll();
 
         //Admin Dashboard sayfasında Kullanıcı adına tıklar.
         adminDashboard.sefadminHeaderUserNameButtonu.click();
