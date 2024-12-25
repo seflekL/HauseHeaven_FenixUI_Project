@@ -18,13 +18,13 @@
 
         <classes>
 
-            <class name="tests.US_034.TC_IK006">
+            <class name="tests.US_034.TC_006">
                 <methods>
                     <include name="anasayfaTesti"></include>
                 </methods>
             </class>
 
-            <class name="tests.US_034.TC_IK006">
+            <class name="tests.US_034.TC_006">
                 <methods>
                     <exclude name="gecersizPasswordTesti"></exclude>
                 </methods>

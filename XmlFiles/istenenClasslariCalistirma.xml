@@ -18,12 +18,12 @@
     <test name="smoke test">
         <classes>
 
-            <class name="tests.US_039.TC_IK007"></class>
+            <class name="tests.US_039.TC_007"></class>
             <class name="tests.US_039.TC_IK008"></class>
-            <class name="tests.US_039.TC_IK009"></class>
-            <class name="tests.US_039.TC_IK010"></class>
-            <class name="tests.US_039.TC_IK011"></class>
-            <class name="tests.US_039.TC_IK012"></class>
+            <class name="tests.US_039.TC_009"></class>
+            <class name="tests.US_039.TC_010"></class>
+            <class name="tests.US_039.TC_011"></class>
+            <class name="tests.US_039.TC_012"></class>
 
         </classes>
     </test>

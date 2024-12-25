@@ -41,7 +41,7 @@
     <test name="smoke test">
         <classes>
             <class name="tests.US_034.TC_IK005"></class>
-            <class name="tests.US_034.TC_IK006"></class>
+            <class name="tests.US_034.TC_006"></class>
         </classes>
     </test>
     <test name="package secme">

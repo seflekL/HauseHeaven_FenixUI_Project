@@ -24,7 +24,7 @@
         <parameter name="calisacakBrowser" value="chrome"></parameter>
         <classes>
             <class name="tests.US_034.TC_IK005"></class>
-            <class name="tests.US_034.TC_IK006"></class>
+            <class name="tests.US_034.TC_006"></class>
         </classes>
     </test>
 
@@ -32,7 +32,7 @@
         <parameter name="calisacakBrowser" value="edge"></parameter>
         <classes>
             <class name="tests.US_034.TC_IK005"></class>
-            <class name="tests.US_034.TC_IK006"></class>
+            <class name="tests.US_034.TC_006"></class>
         </classes>
     </test>
 
