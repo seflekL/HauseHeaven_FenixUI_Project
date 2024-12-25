@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>com.HauseHeaven_Team01</artifactId>
+    <artifactId>HauseHeaven</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
