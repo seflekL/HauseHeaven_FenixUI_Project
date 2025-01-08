@@ -15,20 +15,17 @@ Raporlama: ExtentReports.
 Proje Yönetimi: Maven.
 Test İstatistikleri<br><br>
 Toplam Test Senaryosu: 100
-Başarı Oranı: %98<br><br>
+Başarı Oranı: %98
 Ortalama Test Süresi: 5 dakika
 <br><br>
 🔧 Kurulum<br><br>
 Bu projeyi yerel bilgisayarınıza klonlayın:
 git clone https://github.com/seflekL/HauseHeaven_FenixUI_Project.git
-<br><br>
 Proje dizinine gidin:
 cd HauseHeaven_FenixUI_Project
-<br><br>
-Maven bağımlılıklarını yükleyin:
+ Maven bağımlılıklarını yükleyin:
 mvn clean install
-<br><br>
-Testleri çalıştırın:
+ Testleri çalıştırın:
 mvn test
 <br><br>
 📫 İletişim
