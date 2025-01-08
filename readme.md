@@ -1,34 +1,44 @@
-# HauseHeaven Otomasyon Projesi
+🏠 Hause Heaven UI Projesi - Özet Rapor
+Proje Amacı
+Modern emlak alım, satım ve kiralama süreçlerini kolaylaştırmak için tasarlanmış kullanıcı dostu bir web arayüzüdür. Kullanıcı deneyimi (UX) odaklı geliştirilmiş bu projede, işlevsellik ve estetik ön plandadır.
 
-Bu proje, web uygulama testleri için geliştirilmiş Maven tabanlı bir Java otomasyon frameworküdür. Framework, Selenium WebDriver, TestNG ve diğer kütüphaneleri kullanarak verimli test otomasyonu ve raporlama sağlar.
+✨ Proje Özellikleri
+Kapsamlı Arama Motoru: Lokasyon, fiyat ve diğer kriterlere göre emlak arama.
+Detaylı Emlak Sayfası: Emlak özellikleri, fiyat bilgisi ve lokasyon detayları.
+Favoriler Listesi: Beğenilen emlakları kaydetme.
+Kiralama ve Satış İşlemleri: Kullanıcı dostu işlem yönetimi.
 
+📊 Test ve Teknolojiler
+Test Kapsamı: Giriş, arama, favorilere ekleme ve raporlama.
+Test Araçları: Selenium WebDriver, TestNG, JavaFaker.
+Raporlama: ExtentReports.
+Proje Yönetimi: Maven.
+Test İstatistikleri
+Toplam Test Senaryosu: 100
+Başarı Oranı: %98
+Ortalama Test Süresi: 5 dakika
 
----
+🔧 Kurulum
+Bu projeyi yerel bilgisayarınıza klonlayın:
+bash
+Copy code
+git clone https://github.com/seflekL/HauseHeaven_FenixUI_Project.git
+Proje dizinine gidin:
+bash
+Copy code
+cd HauseHeaven_FenixUI_Project
 
-## 📋 İçindekiler
-1. [Başlarken](#başlarken)
-2. [Gereksinimler](#gereksinimler)
-3. [Kurulum](#kurulum)
-4. [Özellikler](#özellikler)
-5. [Bağımlılıklar](#bağımlılıklar)
-6. [Testlerin Çalıştırılması](#testlerin-çalıştırılması)
-7. [Raporlama](#raporlama)
+Maven bağımlılıklarını yükleyin:
+bash
+Copy code
+mvn clean install
+Testleri çalıştırın:
+bash
+Copy code
+mvn test
 
----
+📫 İletişim
+Projeyi geliştiren kişiye ulaşmak için:
+GitHub: seflekL
 
-## 🛠️ Başlarken
-
-Projeyi kurmak ve çalıştırmak için aşağıdaki adımları takip edebilirsiniz.
-
-### Gereksinimler
-- Java 11 veya üstü
-- Maven 3.6+
-- IntelliJ IDEA, Eclipse veya Visual Studio Code gibi bir IDE
-
----
-
-## 🔧 Kurulum
-
-1. Bu projeyi yerel bilgisayarınıza klonlayın:
-   ```bash
-   git clone https://github.com/seflekL/HauseHeaven_FenixUI_Project.git
+ 
